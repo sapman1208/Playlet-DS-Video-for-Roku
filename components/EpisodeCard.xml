@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="EpisodeCard" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" />
+        <field id="focusPercent" type="float" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/EpisodeCard.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Rectangle id="bg" color="#272B2E" width="520" height="292" />
+        <Poster id="poster" uri="" width="520" height="292" loadDisplayMode="scaleToZoom" />
+        <Label id="titleLabel" text="" color="#FFFFFF" font="font:TinySystemFont" translation="[0, 297]" width="520" height="52" wrap="true" maxLines="2" />
+        <Label id="episodeLabel" text="" color="#B8B8B8" font="font:TinySystemFont" translation="[0, 350]" width="520" height="25" />
+        <Label id="dateLabel" text="" color="#8BAFD1" font="font:TinySystemFont" translation="[0, 376]" width="520" height="25" visible="false" />
+    </children>
+</component>

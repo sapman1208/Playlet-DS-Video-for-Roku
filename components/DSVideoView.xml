@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="DSVideoView" extends="Group">
+    <interface>
+        <function name="startDSVideo" />
+        <field id="returnToLauncher" type="boolean" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Group id="dsContent" scale="[0.666667, 0.666667]">
+            <Rectangle id="background" color="#DF3540" width="1920" height="1080" />
+        </Group>
+        <Timer id="playbackFocusTimer" repeat="false" duration="0.15" />
+        <Timer id="autoplayContextTimer" repeat="false" duration="1.5" />
+    </children>
+</component>

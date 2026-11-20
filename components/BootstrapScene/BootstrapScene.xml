@@ -1,0 +1,29 @@
+<component name="BootstrapScene" extends="Scene">
+    <interface>
+        <field id="appShortcut" type="string" alwaysNotify="true" />
+        <field id="activeApp" type="string" value="playlet" />
+        <field id="shutdownRequested" type="boolean" />
+        <field id="exitChannel" type="bool" alwaysNotify="true" />
+        <field id="launchArgs" type="assocarray" />
+        <field id="inputArgs" type="assocarray" alwaysNotify="true" />
+        <field id="playletLibLoadedUrl" type="assocarray" />
+        <field id="libSceneCreated" type="bool" />
+        <field id="systemLogEvent" type="assocarray" alwaysNotify="true" />
+        <field id="enableSystemLogType" type="string" />
+        <field id="lastExitInfo" type="assocarray" />
+        <field id="startPlaylet" type="boolean" />
+        <function name="CreateInputTransportEventsHandler" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/source/Dialog.brs" />
+    <script type="text/brightscript" uri="pkg:/source/Manifest.brs" />
+    <script type="text/brightscript" uri="pkg:/source/Registry.brs" />
+    <script type="text/brightscript" uri="pkg:/source/PlayletLibUrls.brs" />
+    <script type="text/brightscript" uri="pkg:/components/BootstrapScene/BootstrapScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/Logger.brs" />
+    <script type="text/brightscript" uri="pkg:/components/BootstrapScene/LoadingMessages.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Group id="MainSceneContainer" />
+        <LoadingIndicator id="LoadingIndicator" />
+    </children>
+</component>

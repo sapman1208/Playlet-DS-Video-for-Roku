@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="DetailActionItem" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" />
+        <field id="focusPercent" type="float" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/DetailActionItem.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Rectangle id="bg" color="#2A2F33" width="120" height="102" translation="[15, 0]" opacity="0" />
+        <Poster id="icon" uri="" width="82" height="82" translation="[34, 7]" loadDisplayMode="scaleToFit" visible="false" />
+        <Label id="playGlyph" text=">" color="#FFFFFF" font="font:LargeBoldSystemFont" translation="[34, 7]" width="82" height="82" horizAlign="center" visible="false" />
+        <Label id="titleLabel" text="" color="#FFFFFF" font="font:TinyBoldSystemFont" translation="[0, 108]" width="150" height="34" horizAlign="center" />
+    </children>
+</component>

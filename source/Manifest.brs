@@ -1,0 +1,4 @@
+function Manifest_ReadValue(key as string) as string
+    appInfo = CreateObject("roAppInfo")
+    return appInfo.GetValue(key)
+end function
