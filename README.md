@@ -1,7 +1,7 @@
 <p align="center">
   <img src="docs/banner.png" style="display:block;text-align:center" alt="Playlet & DS Video Logo" width="800"/>
   <br/><br/>
-  <a href="https://github.com/sapman1208/Playlet-DS-Video-for Roku/releases/download/v.1.0.0/Playlet.+.DS.Video.v1.0.0.zip">Current Release v1.0.0</a>
+  <a href="https://github.com/sapman1208/Playlet-DS-Video-for-Roku/releases/download/v.1.0.0/Playlet.+.DS.Video.v1.0.0.zip">Current Release v1.0.0"</a>
 </p>
 
 # Playlet & DS Video
