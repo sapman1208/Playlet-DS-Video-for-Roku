@@ -1,7 +1,7 @@
 <p align="center">
   <img src="docs/banner.png" style="display:block;text-align:center" alt="Playlet & DS Video Logo" width="800"/>
   <br/><br/>
-  <a href="https://github.com/sapman1208/Playlet-DS-Video-for-Roku/releases/download/v.1.0.0/Playlet.+.DS.Video.v1.0.0.zip">Current Release v1.0.0</a>
+  <a href="https://github.com/sapman1208/Playlet-DS-Video-for-Roku/releases/download/v.1.0.1/Playlet.%2B.DS.Video.v1.0.1.zip">Current Release v1.0.1</a>
 </p>
 
 # Playlet & DS Video
@@ -10,7 +10,7 @@ Playlet & DS Video is an unofficial YouTube and Synology Video Station client fo
 
 ## Installation
 
-- `Playlet.+.DS.Video.v1.0.0.zip`: needs to be sideloaded on Roku TV. See installation instructions:
+- `Playlet.+.DS.Video.v1.0.1.zip`: needs to be sideloaded on Roku TV. See installation instructions:
 
 https://github.com/sapman1208/DS-Video-for-Roku-TV/blob/main/Roku_Developer_Mode_Sideload_Instructions.pdf
 
