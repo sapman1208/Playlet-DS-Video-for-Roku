@@ -1,4 +1,8 @@
 sub init()
+    for each id in ["titleLabel", "metaLabel", "dateLabel", "ratingLabel", "watchedStateLabel"]
+        label = m.top.findNode(id)
+        label.font.size = int(label.font.size * 1.14 + 0.5)
+    end for
     m.actions = ["Play", "Favorite", "Watch List", "Share"]
     m.actionOverrides = {}
     m.movieMetadataTask = invalid
@@ -511,14 +515,14 @@ sub configurePosterFrame(data as object)
 
         m.top.findNode("titleLabel").translation = [760, 150]
         m.top.findNode("titleLabel").width = 1040
-        m.top.findNode("titleLabel").height = 72
+        m.top.findNode("titleLabel").height = 78
         m.top.findNode("titleLabel").maxLines = 1
         m.top.findNode("metaLabel").translation = [760, 230]
         m.top.findNode("metaLabel").width = 1000
         m.top.findNode("dateLabel").translation = [760, 285]
         m.top.findNode("dateLabel").width = 1000
         m.top.findNode("ratingLabel").translation = [760, 336]
-        m.top.findNode("ratingGrid").translation = [884, 330]
+        m.top.findNode("ratingGrid").translation = [902, 330]
         m.top.findNode("summaryLabel").translation = [760, 410]
         m.top.findNode("summaryLabel").width = 1040
         m.top.findNode("summaryLabel").height = 390
@@ -546,7 +550,7 @@ sub configurePosterFrame(data as object)
         m.top.findNode("dateLabel").translation = [540, 282]
         m.top.findNode("dateLabel").width = 1100
         m.top.findNode("ratingLabel").translation = [540, 336]
-        m.top.findNode("ratingGrid").translation = [664, 330]
+        m.top.findNode("ratingGrid").translation = [682, 330]
         m.top.findNode("summaryLabel").translation = [540, 430]
         m.top.findNode("summaryLabel").width = 1180
         m.top.findNode("summaryLabel").height = 426
@@ -599,6 +603,11 @@ sub applySummaryFit(summary as string, data as dynamic)
             actions.translation = [540, 898]
             if status <> invalid then status.translation = [540, 1020]
         end if
+    end if
+    if textLen <= 760
+        label.font.size = int(label.font.size * 1.25 + 0.5)
+    else if textLen <= 1150
+        label.font.size = int(label.font.size * 1.12 + 0.5)
     end if
 end sub
 

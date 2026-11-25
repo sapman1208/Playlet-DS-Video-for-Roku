@@ -1,9 +1,9 @@
 sub init()
     title = m.top.findNode("titleLabel")
-    title.font.size = Int(title.font.size * 1.18 + 0.5)
+    title.font.size = Int(title.font.size * 1.50 + 0.5)
     for each id in ["episodeLabel", "dateLabel"]
         label = m.top.findNode(id)
-        label.font.size = Int(label.font.size * 1.12 + 0.5)
+        label.font.size = Int(label.font.size * 1.38 + 0.5)
     end for
     m.top.observeField("itemContent", "onContentSet")
     m.top.observeField("focusPercent", "onFocusChange")

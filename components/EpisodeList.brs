@@ -1,4 +1,8 @@
 sub init()
+      for each id in ["showTitle", "seasonLabel"]
+          label = m.top.findNode(id)
+          label.font.size = int(label.font.size * 1.15 + 0.5)
+      end for
       m.top.observeField("showData", "onShowDataSet")
       m.episodes = []
       m.viewMode = "episodes"
